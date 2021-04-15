@@ -12,8 +12,7 @@ console.log(transactions);
 const App = () => {
   return (
     <div>
-      <h1>Main component</h1>
-      <Profile
+       <Profile
         name={user.name}
         tag={user.tag}
         location={user.location}
