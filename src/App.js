@@ -1,13 +1,26 @@
-import Profile from "./components/Profile"
-import Statistics from "./components/Statistics"
-import FriendList from "./components/FriendList"
-import TransactionHistory from "./components/TransactionHistory"
+import Profile from "./components/Profile/Profile"
+import Statistics from "./components/Statisctics/Statistics"
+import FriendList from "./components/FriendList/FriendList"
+import TransactionHistory from "./components/TransactionHistory/TransactionHistory"
 import user from "./user.json"
 import statisticalData from "./statistical-data.json"
 import friends from "./friends.json"
 import transactions from "./transactions.json"
+import "./styles.css";
 
-console.log(transactions);
+console.log(statisticalData);
+
+// const color = function randomColor() {
+//   var color = "#";
+//   var randomHex = "123456ABCDEF";
+//   for (var i = 0; i < 6; i++) {
+//     color += randomHex[Math.floor(Math.random() * 16)];
+//   }
+
+//   return color;
+// };
+
+
 
 const App = () => {
   return (
