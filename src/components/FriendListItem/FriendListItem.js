@@ -3,28 +3,26 @@ import defaultImg from "../default.jpg";
 import styles from "./FriendListItem.module.css";
 
 const FriendListItem = ({ avatar, name, isOnline, id }) => {
-const statusClass = isOnline ? styles.online : styles.offline
+  const statusClass = isOnline ? styles.online : styles.offline;
 
-    return (
-      <li key={id} className={styles.item}>
-        <span className={statusClass}> {isOnline}</span>
-        <img className={styles.avatar} src={avatar} alt={name} width="48" />
-        <p className={styles.name}>{name}</p>
-      </li>
-    );
-}
+  return (
+    <li className={styles.item}>
+      <span className={statusClass}> {isOnline}</span>
+      <img className={styles.avatar} src={avatar} alt={name} width="48" />
+      <p className={styles.name}>{name}</p>
+    </li>
+  );
+};
 
 FriendListItem.defaultProps = {
   avatar: defaultImg,
 };
-
 
 FriendListItem.propTypes = {
   avatar: PropTypes.string,
   name: PropTypes.string.isRequired,
   isOnline: PropTypes.bool.isRequired,
   id: PropTypes.number.isRequired,
- 
 };
-    
+
 export default FriendListItem;

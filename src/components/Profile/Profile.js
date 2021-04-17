@@ -2,7 +2,7 @@ import PropTypes from "prop-types"
 import defaultImg from "../default.jpg"
 import "./Profile.scss"
 
-console.log(defaultImg);
+
 const Profile = ({ name, tag, location, avatar, stats }) => (
   <div className="profile">
     <div className="description">

@@ -8,17 +8,7 @@ import friends from "./friends.json"
 import transactions from "./transactions.json"
 import "./styles.css";
 
-console.log(statisticalData);
 
-// const color = function randomColor() {
-//   var color = "#";
-//   var randomHex = "123456ABCDEF";
-//   for (var i = 0; i < 6; i++) {
-//     color += randomHex[Math.floor(Math.random() * 16)];
-//   }
-
-//   return color;
-// };
 
 
 
