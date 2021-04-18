@@ -9,9 +9,6 @@ import transactions from "./transactions.json"
 import "./styles.css";
 
 
-
-
-
 const App = () => {
   return (
     <div>
